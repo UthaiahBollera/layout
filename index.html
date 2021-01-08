@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./app.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="menubar">
+            <div id="company-name">
+                Divvy
+            </div>
+            <div id="menu-list">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-credit-card"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-file-alt"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-pie"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-crown"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="sub-section">
+            <div id="accounts">
+                <div class="heading">
+                    Accounts
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            Citi Bank
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            HSBC
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            Standard Charted
+                        </li>
+                        <li class="another">
+                            <i class="fas fa-circle"></i>
+                            + Add Another
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="categories">
+                <div class="heading">
+                    Categories
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="automobile">
+                            <i class="fas fa-cars"></i>
+                            Automobile
+                        </li>
+                        <li class="food">
+                            <i class="fad fa-burger-soda"></i>
+                            Food And Beverage
+                        </li>
+                        <li class="shopping">
+                            <i class="fas fa-shopping-basket"></i>
+                            Groceries
+                        </li>
+                        <li class="house">
+                            <i class="fas fa-home"></i>
+                            Household
+                        </li>
+                        <li class="bag">
+                            <i class="fad fa-bags-shopping"></i>
+                            Utilities
+                        </li>
+                        <li class="another">
+                            + 5 more
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="tranasctions">
+            <div id="search-container">
+                <div class="head">
+                    <h3>Daily Tranasctions</h3>
+                    <button type="button" id="add-transition">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="searchbar">
+                    <input placeholder="Search" type="text" />
+                </div>
+                <div class="date-picker">
+                    <ul>
+                        <li class="arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>SUN</span>
+                                <label>28</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>MON</span>
+                                <label>28</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>TUE</span>
+                                <label>28</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>WED</span>
+                                <label>28</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>THU</span>
+                                <label>28</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span class="selected">FRI</span>
+                                <label class="selected">29</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>SAT</span>
+                                <label>01</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>SUN</span>
+                                <label>02</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <span>MON</span>
+                                <label>03</label>
+                            </div>
+                        </li>
+                        <li class="arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="expense">
+                    <div id="total-expense">
+                        <label>Total Expenses</label>
+                        <h3>$120.56</h3>
+                    </div>
+                    <div id="total-income">
+                        <label> Total Income</label>
+                        <h3>$120.56</h3>
+                    </div>
+                    <div id="net">
+                        <label>Net Income</label>
+                        <h3>$120.56</h3>
+                    </div>
+                </div>
+                <hr />
+                <div id="expenditure-list">
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="http://makemyurl.com/f5atm" alt="Amazon">
+                            </div>
+                            <div class="name">
+                                <div>Amazon</div>
+                                <div class="price">$120.06</div>
+                                <div class="date-time">
+                                    17th June, 20, 7:32PM
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="http://makemyurl.com/f5atm" alt="Amazon">
+                            </div>
+                            <div class="name">
+                                <div>Amazon</div>
+                                <div class="price">$120.06</div>
+                                <div class="date-time">
+                                    17th June, 20, 7:32PM
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="http://makemyurl.com/f5atm" alt="Amazon">
+                            </div>
+                            <div class="name">
+                                <div>Amazon</div>
+                                <div class="price">$120.06</div>
+                                <div class="date-time">
+                                    17th June, 20, 7:32PM
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="http://makemyurl.com/f5atm" alt="Amazon">
+                            </div>
+                            <div class="name">
+                                <div>Amazon</div>
+                                <div class="price">$120.06</div>
+                                <div class="date-time">
+                                    17th June, 20, 7:32PM
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="http://makemyurl.com/f5atm" alt="Amazon">
+                            </div>
+                            <div class="name">
+                                <div>Amazon</div>
+                                <div class="price">$120.06</div>
+                                <div class="date-time">
+                                    17th June, 20, 7:32PM
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="overview">
+            <div id="monthly-overview">
+                <h3>Montly Overview</h3>
+                <div class="expense">
+                    <label>Expense</label>
+                    <div class="graph">
+                        <div class="one orange"></div>
+                        <div class="two orange"></div>
+                        <div class="three orange"></div>
+                        <div class="four dark-orange"></div>
+                        <div class="five orange"></div>
+                        <div class="six dark-orange"></div>
+                        <div class="seven orange"></div>
+                    </div>
+                    <div class="amount">
+                        $120.56
+                    </div>
+                </div>
+                <div class="income">
+                    <label> Income</label>
+                    <div class="graph">
+                        <div class="one green"></div>
+                        <div class="two dark-green"></div>
+                        <div class="three green"></div>
+                        <div class="four green"></div>
+                        <div class="five green"></div>
+                        <div class="six dark-green"></div>
+                        <div class="seven green"></div>
+                    </div>
+                    <div class="amount">
+                        $12003.56
+                    </div>
+                </div>
+            </div>
+            <div id="expensesbycatergory">
+                <h3>Expense By Category</h3>
+            </div>
+        </div>
+
+        <!--Modal Popup-->
+        <div class="modale " aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h2>Add Transaction</h2>                    
+                </div>
+                <div class="modal-body">
+                    <div class="form-field">
+                        <label for="desc">
+                            Description                            
+                        </label>
+                        <input  type="text" id="desc" />
+                    </div>
+                    <div class="form-field">
+                        <label for="merchant">
+                            Merchant                            
+                        </label>
+                        <input  type="text" id="merchant" />
+                    </div>
+                    <div class="form-field">                        
+                        <label>             
+                            Transaction Type               
+                        </label>                        
+                        <label>
+                            <input type="radio" id="debit" name="payment-type" />
+                            Debit                            
+                            <input type="radio" id="credit" name="payment-type" />
+                            Credit                            
+                        </label>                        
+                    </div>
+                    <div class="form-field">
+                        <label for="amount">
+                            Amount                            
+                        </label>
+                        <input type="text" id="amount" />
+                    </div>
+                    <div class="form-field">
+                        <label for="Category">
+                            Select a Category                            
+                        </label>
+                        <select name="category" id="category">
+                            <option value="automonile">Automobile</option>
+                            <option value="foodandbeverage">Food And Beverage</option>
+                            <option value="groceries">Groceries</option>
+                            <option value="household">House Hold</option>
+                            <option value="utilities">Utilities</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn submit-button">
+                        Create Transaction
+                    </button>
+                    <button type="button" class="btn close-button">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var addBtn = document.querySelector('#add-transition');            
+            addBtn.addEventListener('click',()=>{
+                document.querySelector('.modale').classList.toggle('opened');
+            }, false);
+        });        
+    </script>
+</body>
+
+</html>
