@@ -1,0 +1,455 @@
+body {
+    margin:0;
+    padding:0;    
+    background-color:#f0eff6;
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Noto Sans SC', sans-serif;
+}
+#app {    
+    background: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 10px;
+    min-height: 1000px;
+    max-height: 1000px;
+}
+#app > #menubar {
+    width:5%;    
+    float: left;
+    box-sizing: border-box;
+    border-right: solid 2px #f9f9fa;
+    min-height: 1000px;
+    max-height: 1000px;
+}
+#menubar  #company-name {
+    text-align: center;
+    padding: 30px 30px 40px 11px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4142f9;
+}
+#menubar  #menu-list > ul {    
+    margin:0;
+    padding:0;
+    list-style: none;    
+}
+#menubar  #menu-list > ul > li {    
+    padding:5px;
+    margin: 35px 0 35px 0;
+    text-align: center;
+    font-size: 15px;
+    color: #d3d6da;
+    border-right: solid 3px #ffff;
+}
+
+#menubar  #menu-list > ul > li:hover{
+    cursor: pointer;
+    color: #1d1d1d;
+    transition: color 1s ease;
+    transition: border 0.5s ease;
+    border-right: solid 3px #1d1d1d;
+}
+
+#menubar  #menu-list > ul li:first-child {
+    color: #1d1d1d;
+    border-right: solid 3px #1d1d1d;
+}
+
+#app > #sub-section {    
+    padding-top: 70px;   
+    float: left;
+    width: 18%;
+    background: #fafafa;
+    min-height: 1000px;
+    max-height: 1000px;
+    box-sizing: border-box;
+}
+#app > #sub-section .heading{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#app > #sub-section .list > ul {
+    list-style-type: none;    
+    padding: 0;
+    margin: 0;
+}
+#app > #sub-section .list > ul > li > i {
+    color: #f0f3fa;
+    margin: 0 15px 0 15px;
+}
+
+#app > #sub-section #categories .list .automobile>i {
+    color: #1aaf53;
+}
+#app > #sub-section #categories .list .food>i {
+    color: #c8c6f3;
+}
+#app > #sub-section #categories .list .shopping>i {
+    color: #e35101;
+}
+#app > #sub-section #categories .list .house>i {
+    color: #ded548;
+}
+#app > #sub-section #categories .list .bag>i {
+    color: #f33375;   
+}
+#app > #sub-section #categories .list > ul > li:first-child{
+    color: #1d1d1d;
+}
+
+#app > #sub-section .list > ul > li {
+    padding: 10px;
+    font-size: 12px;    
+    cursor: pointer;
+    color: #83868e;
+}
+#app > #sub-section #categories li {
+    color: #1d1d1d;
+}
+#app > #sub-section .list li:last-child {
+    color: #6a57f9 !important;
+}
+#app > #sub-section #categories {
+    margin-top: 35px;
+}
+#app > #tranasctions {
+    width:40%;    
+    float: left;
+    padding-top: 70px;
+    padding-left: 35px;
+}
+#app > #tranasctions .head{
+    width:100%;
+    height: 25px;
+}
+#app > #tranasctions .head>h3 {
+    float: left;
+    display: inline-block;
+    margin: 0;
+}
+#app > #tranasctions .head > button {
+    border-radius: 100%;
+    padding-top: 8px;
+    padding-right: 11px;
+    padding-bottom: 8px;
+    padding-left: 11px;
+    color: #f0f3fa;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: #4142f9;    
+}
+#app > #tranasctions .head>i {
+    font-weight: 400 !important;
+    margin-right: 25px;
+    margin-top: 10px;
+    color:#b6b6b6;
+    cursor: pointer;
+}
+
+#app > #tranasctions .head>i, #app > #tranasctions .head > button {
+    float: right;
+    display: inline-block;    
+}
+#app > #tranasctions .searchbar {
+    margin-top: 30px;
+    width: 100%;
+    clear: both;
+}
+#app > #tranasctions .searchbar input {
+    background: #f7f8fa;
+    width: 97%;
+    height: 35px;
+    border:none;
+    border-radius:5px;
+    padding-left: 20px;
+    outline: none;
+}
+#app > #tranasctions .date-picker{
+    height: 100px;
+    margin: auto;
+    margin-top: 35px;
+}
+#app > #tranasctions .date-picker ul{
+    list-style-type: none;    
+    padding: 0;
+    margin: 0;    
+}
+#app > #tranasctions .date-picker ul li{
+    display: inline-block;
+    width: 30px;
+    float: left;
+    margin-right: 11px;
+    margin-left: 11px;
+    text-align: center;    
+}
+#app > #tranasctions .date-picker ul li .date {
+    
+}
+#app > #tranasctions .date-picker ul li .date label {    
+    border: solid 1px #eff0f2;
+    padding: 9px;
+    border-radius: 5px;
+    display: inline-block;    
+    font-size: 12px;
+    cursor: pointer;
+}
+#app > #tranasctions .date-picker ul li.arrow{
+    padding-top: 40px;
+    cursor: pointer;
+}
+#app > #tranasctions .date-picker ul li.arrow:first-child{
+    text-align: left;
+    margin-left: 0;
+}
+#app > #tranasctions .date-picker ul li.arrow:last-child{
+    text-align: right;
+    margin-right: 0;
+}
+#app > #tranasctions .date-picker ul li .date span {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: inline-block;   
+    margin-bottom: 15px;     
+    color: #dddfe2;
+}
+#app > #tranasctions .date-picker ul li .date>span.selected{
+    color: #8671f9;    
+}
+#app > #tranasctions .date-picker ul li .date>label.selected{
+    color: #1d1d1d;
+    background-color: #f5f5fa;
+}
+#app #expense {
+    width: 100%;
+    margin: auto;
+}
+#app #expense div{
+    width:33%;
+    float:left;
+}
+#app #expense div>label{
+    color:#bbbdc1;
+    font-size: 12px;
+}
+#app #expense div>h3{
+    margin-top:7px;
+}
+#app #expense #net{
+    float: right;
+    text-align: right;
+}
+hr {
+    clear: both;
+    border-top: solid 1px #f5f6f8;
+}
+#expenditure-list{
+    width: 100%;
+    height: 300px;
+    overflow-x: scroll;
+
+}
+#expenditure-list ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+#expenditure-list ul li{
+    clear: both;
+}
+#expenditure-list ul li>div {
+    display: inline-block;
+    float: left;
+}
+#expenditure-list ul li > .img {
+    width: 70px;
+    height: 70px;    
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+#expenditure-list ul li > .name{
+    position: relative;
+    width: 87%;
+}
+#expenditure-list ul li > .name>div {
+    font-size: 12px;
+}
+#expenditure-list ul li > .name>div.price {
+    position: absolute;
+    right: 0;
+}
+#expenditure-list ul li > .name>div.date-time {
+    margin-top: 10px;
+    color:#96969e;
+}
+#expenditure-list ul li > .img > img{
+    width: 30px;
+}
+#overview {
+    margin-top:53px;
+    float: left;
+    width: 30%;
+    margin-left: 25px;  
+    margin-bottom: 25px; 
+}
+#overview #monthly-overview {
+    height: 230px;
+    margin-left: 20px;
+}
+#overview .expense, #overview .income {    
+    width: 40%;    
+    height: 150px;
+    display: inline-block;
+    float: left;    
+    text-align: center;
+    border: solid 2px #f6f7f8;   
+    padding-top: 20px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+#overview .graph, #overview .graph {
+    margin: 25px 0 25px 0;
+}
+#overview label{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.fa, .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500 !important;
+}
+.orange{
+    background-color: #fde1ce;
+    border: solid 2px #fde1ce;
+}
+.dark-orange{
+    border: solid 2px #f58234;
+    background-color: #f58234;
+}
+.green {
+    border: solid 2px #cbefd1;
+    background-color: #cbefd1;
+}
+.dark-green {
+    border: solid 2px #28bc40;
+    background-color: #28bc40;
+}
+#overview .graph > div{
+    width: 1px;
+    margin-left: 5px;
+    display: inline-block;    
+    border-radius: 10px;    
+    height: 50px;    
+}
+#overview .graph > div.one,#overview .graph > div.four{    
+    height: 20px;
+}
+#overview .graph > div.two,#overview .graph > div.five{
+    height: 33px;
+}
+#overview .graph > div.three, #overview .graph > div.seven {    
+    height: 40px;
+}
+
+#oveview .amount{
+    clear: both;
+    margin-top: 20px;
+}
+#expensesbycatergory{
+    margin-left: 20px;
+}
+
+
+/* Modal Popup */
+.modale:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  .opened:before {
+    display: block;
+  }
+  .opened .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 5%;
+  }
+  .modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 0px;
+    border-radius: 5px;
+    margin-left: -200px;    
+    position: fixed;
+    left: 40%;
+    top: -100%;
+    z-index: 11;
+    width: 40%;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-header,
+  .modal-footer {
+    padding: 10px 10px;
+  }
+  .modal-footer * {
+      margin-left: 10px;
+  }
+  .modal-header {
+    border-bottom: #eeeeee solid 1px;
+  }
+  .modal-header h2 {
+    font-size: 20px;
+  }
+.modal-dialog .form-field {
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.modal-dialog .form-field input[type="text"], select{
+    outline: none;        
+    width: 50%;
+    border-radius: 5px;
+    height: 30px;
+    border: solid 1px #96969e;
+}
+.modal-dialog .form-field label {
+    display: block;
+    font-size: 12px;    
+    margin-bottom: 15px;
+}
+.btn {    
+    border-radius: 5px;    
+    border: none;
+    padding: 10px 9px;
+    outline:none;
+    cursor: pointer;
+}
+.submit-button {    
+    background: #ebf2ff;    
+    color: #6d94e1;    
+}
+.close-button {
+    background: #ededf0;
+    color: #1d1d1d;
+    font-weight: bold;
+}
